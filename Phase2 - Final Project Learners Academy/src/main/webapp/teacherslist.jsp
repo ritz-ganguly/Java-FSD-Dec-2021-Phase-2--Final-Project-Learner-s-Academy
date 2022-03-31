@@ -46,6 +46,10 @@
 			<form action="assignTeachersForSubjects" method="post">
 				<td><input type="submit" value="Assign Teachers For Subjects"></td>
 			</form>
+			
+			<form action="adminLogout" method="post">
+				<td><input type="submit" value="Logout"></td>
+			</form>
 		</tr>
 	</table>
 
