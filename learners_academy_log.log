@@ -1,0 +1,55 @@
+;;; 
+Export: Release 11.2.0.2.0 - Production on Thu Mar 31 13:10:28 2022
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+;;; 
+Connected to: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+Starting "LEARNERS_ACADEMY"."SYS_EXPORT_SCHEMA_01":  learners_academy/******** SCHEMAS=learners_academy DIRECTORY=backup_dir3 DUMPFILE=learners_academy_dump.dmp LOGFILE=learners_academy_log 
+Estimate in progress using BLOCKS method...
+Processing object type SCHEMA_EXPORT/TABLE/TABLE_DATA
+Total estimation using BLOCKS method: 1024 KB
+Processing object type SCHEMA_EXPORT/USER
+Processing object type SCHEMA_EXPORT/SYSTEM_GRANT
+Processing object type SCHEMA_EXPORT/ROLE_GRANT
+Processing object type SCHEMA_EXPORT/DEFAULT_ROLE
+Processing object type SCHEMA_EXPORT/TABLESPACE_QUOTA
+Processing object type SCHEMA_EXPORT/PRE_SCHEMA/PROCACT_SCHEMA
+Processing object type SCHEMA_EXPORT/SEQUENCE/SEQUENCE
+Processing object type SCHEMA_EXPORT/TABLE/TABLE
+Processing object type SCHEMA_EXPORT/TABLE/INDEX/INDEX
+Processing object type SCHEMA_EXPORT/TABLE/CONSTRAINT/CONSTRAINT
+Processing object type SCHEMA_EXPORT/TABLE/INDEX/STATISTICS/INDEX_STATISTICS
+Processing object type SCHEMA_EXPORT/TABLE/COMMENT
+Processing object type SCHEMA_EXPORT/FUNCTION/FUNCTION
+Processing object type SCHEMA_EXPORT/FUNCTION/ALTER_FUNCTION
+Processing object type SCHEMA_EXPORT/TABLE/CONSTRAINT/REF_CONSTRAINT
+Processing object type SCHEMA_EXPORT/TABLE/TRIGGER
+. . exported "LEARNERS_ACADEMY"."DEMO_PRODUCT_INFO"      24.88 KB      10 rows
+. . exported "LEARNERS_ACADEMY"."CLASSES"                5.648 KB       4 rows
+. . exported "LEARNERS_ACADEMY"."DEMO_CUSTOMERS"         10.12 KB       7 rows
+. . exported "LEARNERS_ACADEMY"."DEMO_ORDERS"            6.914 KB      10 rows
+. . exported "LEARNERS_ACADEMY"."DEMO_ORDER_ITEMS"       7.695 KB      49 rows
+. . exported "LEARNERS_ACADEMY"."DEMO_STATES"            6.257 KB      51 rows
+. . exported "LEARNERS_ACADEMY"."DEMO_USERS"             7.945 KB       2 rows
+. . exported "LEARNERS_ACADEMY"."DEPT"                   5.945 KB       4 rows
+. . exported "LEARNERS_ACADEMY"."EMP"                    8.578 KB      14 rows
+. . exported "LEARNERS_ACADEMY"."STUDENTS"               6.859 KB       5 rows
+. . exported "LEARNERS_ACADEMY"."SUBJECTS"               5.968 KB      14 rows
+. . exported "LEARNERS_ACADEMY"."SUBJECT_CLASS"          5.578 KB       6 rows
+. . exported "LEARNERS_ACADEMY"."SUBJECT_TEACHER"        5.617 KB       9 rows
+. . exported "LEARNERS_ACADEMY"."TEACHERS"               6.640 KB      13 rows
+. . exported "LEARNERS_ACADEMY"."USERS"                  5.867 KB       1 rows
+. . exported "LEARNERS_ACADEMY"."APEX$_ACL"                  0 KB       0 rows
+. . exported "LEARNERS_ACADEMY"."APEX$_WS_FILES"             0 KB       0 rows
+. . exported "LEARNERS_ACADEMY"."APEX$_WS_HISTORY"           0 KB       0 rows
+. . exported "LEARNERS_ACADEMY"."APEX$_WS_LINKS"             0 KB       0 rows
+. . exported "LEARNERS_ACADEMY"."APEX$_WS_NOTES"             0 KB       0 rows
+. . exported "LEARNERS_ACADEMY"."APEX$_WS_ROWS"              0 KB       0 rows
+. . exported "LEARNERS_ACADEMY"."APEX$_WS_TAGS"              0 KB       0 rows
+. . exported "LEARNERS_ACADEMY"."APEX$_WS_WEBPG_SECTIONS"      0 KB       0 rows
+. . exported "LEARNERS_ACADEMY"."APEX$_WS_WEBPG_SECTION_HISTORY"      0 KB       0 rows
+Master table "LEARNERS_ACADEMY"."SYS_EXPORT_SCHEMA_01" successfully loaded/unloaded
+******************************************************************************
+Dump file set for LEARNERS_ACADEMY.SYS_EXPORT_SCHEMA_01 is:
+  C:\MYJAVA\LEARNERS_ACADEMY_DUMP.DMP
+Job "LEARNERS_ACADEMY"."SYS_EXPORT_SCHEMA_01" successfully completed at 13:12:04
