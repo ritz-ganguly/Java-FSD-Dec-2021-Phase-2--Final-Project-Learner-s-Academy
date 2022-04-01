@@ -35,7 +35,16 @@ public class SubjectClassDAO {
 			}
 			
 			
+			int checkSubjectId = -1;
 			
+			query = "select subject_id from subject_class where subject_id = ?";
+			st = con.prepareStatement(query);
+			st.setInt(1, subject_id);
+			rs = st.executeQuery();
+			while(rs.next())
+				checkSubjectId = rs.getInt(1);
+			
+			if(checkSubjectId == -1) {
 			
 			query = "insert into subject_class values(?,?)";
 			st = con.prepareStatement(query);
@@ -43,6 +52,20 @@ public class SubjectClassDAO {
 			st.setInt(2, class_id);
 			
 			st.executeUpdate();
+			
+			
+			}
+			
+			
+			else {
+				
+				query = "update subject_class set class_id =? where subject_id = ?";
+				st = con.prepareStatement(query);
+				st.setInt(2, subject_id);
+				st.setInt(1, class_id);
+				st.executeUpdate();
+				
+			}
 			con.close();
 			
 		}

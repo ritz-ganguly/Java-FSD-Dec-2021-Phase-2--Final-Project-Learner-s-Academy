@@ -32,11 +32,34 @@ public void assignSubjectToTeacher(Subjects s, Teachers t) {
 		while(rs.next())
 			teacher_id = rs.getInt(1);
 		
+		
+		int checkSubjectId = -1;
+		query = "select subject_id from subject_teacher where subject_id = ?";
+		st = con.prepareStatement(query);
+		st.setInt(1, subject_id);
+		rs = st.executeQuery();
+		while(rs.next())
+			checkSubjectId = rs.getInt(1);
+		
+		
+		if(checkSubjectId == -1) {
 		query = "insert into subject_teacher values(?,?)";
 		st = con.prepareStatement(query);
 		st.setInt(1, subject_id);
 		st.setInt(2, teacher_id);
 		st.executeUpdate();
+		
+		
+		}
+		
+		else {
+			query  = "update subject_teacher set teacher_id = ? where subject_id = ?";
+			st = con.prepareStatement(query);
+			st.setInt(2, subject_id);
+			st.setInt(1, teacher_id);
+			st.executeUpdate();
+			
+		}
 		con.close();
 		}
 	
